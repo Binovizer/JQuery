@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>Jquery Demo</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+    </head>
+    <body>
+        
+        <div id="drag" style="width:400px;height:400px;background-color: aqua">
+            <span>Hello! You cant free me.</span>
+        </div>
+        <div id="draggable">Drag me</div>
+        
+        <script>
+            $("#draggable").draggable({axis: "x"});
+            $("span").draggable({containment: "parent"});
+            $( "#resizable" ).resizable();
+            $( "#draggable" ).draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+            $( "#draggable2" ).draggable({ cursor: "crosshair", cursorAt: { top: -5, left: -5 } });
+            $( "#draggable3" ).draggable({ cursorAt: { bottom: 0 } });
+            
+        </script>
+    </body>
+</html>

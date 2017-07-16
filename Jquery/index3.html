@@ -1,0 +1,30 @@
+<html>
+
+  <head>
+    <title>JQuery Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js\jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+      <div id='text'>This is some text.</div>
+      
+      <div class="circle"></div>
+      
+      <div class="clear"></div>
+      
+      <script type="text/javascript">
+          if(typeof jQuery == "undefined"){
+              alert("Jquery is not installed.");
+          }else{
+              $(".circle").hover(function(){
+                  $(".circle").css('background-color', 'red');
+              });
+              $(".circle").mouseleave(function(){
+                  $(".circle").css('background-color', 'green');
+              });
+              alert($("body").css("width"));
+          }
+      </script>
+</body>
+
+</html>

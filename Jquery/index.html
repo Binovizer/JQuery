@@ -1,0 +1,32 @@
+<html>
+
+  <head>
+    <title>JQuery Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js\jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    Hi there!
+      
+    <div class="clear"></div>
+    
+    <div class="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+      
+    <script type="text/javascript">
+      if(typeof jQuery == "undefined"){
+        alert("Jquery is not installed.");
+      }else{
+        $(".circle").click(function(){
+            alert("Circle was clicked");
+        });
+        $(".square").click(function(){
+            alert("Square was clicked");
+        });
+      }
+    </script>
+
+  </body>
+
+</html>

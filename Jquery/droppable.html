@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>Jquery Demo</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+    </head>
+    
+    <body>
+        
+        <div id="lilSquare"></div>
+        <div id="bigSquare"></div>
+        
+        <script>
+            $("#lilSquare").draggable();
+            $("#bigSquare").droppable({
+                drop: function(event, ui){
+                    alert("Dropped.");
+                }
+            });
+        </script>
+        
+    </body>
+
+</html>

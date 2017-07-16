@@ -1,0 +1,28 @@
+<html>
+
+    <head>
+        <title>Jquery Demo</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        
+        <p id="text">Hello there! How are you ?</p>
+        
+        <button id="toggle">Toggle Text</button>
+        
+        <script>
+                
+            $("#toggle").click(function(){
+                
+                if($("#text").css("display") == "none"){
+                    $("#text").fadeIn();
+                }
+                else{
+                    $("#text").fadeOut();
+                }
+            });
+            
+        </script>
+    </body>
+</html>

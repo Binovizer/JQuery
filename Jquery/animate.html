@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <title>Jquery Demo</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="circle"></div>
+        
+        <script>
+            $(".circle").click(function(){
+                $(this).animate({
+                    width: "200px",
+                    height: "200px",
+                    marginLeft: "50px",
+                    marginTop: "50px"
+                }, 2000, function(){
+                    $(this).css("background-color", "red")
+                });
+                
+            });
+        </script>
+    </body>
+</html>
